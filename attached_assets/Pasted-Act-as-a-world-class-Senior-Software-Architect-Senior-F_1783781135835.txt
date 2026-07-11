@@ -1,0 +1,764 @@
+Act as a world-class Senior Software Architect, Senior Full Stack Developer, Award-winning UI/UX Designer, Portfolio Designer, Motion Designer, and Recruiter.
+
+Your task is to build my COMPLETE personal portfolio website FROM SCRATCH.
+
+This must be a production-ready portfolio, not a template or a generated website.
+
+It should look like something that could win a portfolio design competition.
+
+Think like Apple, Linear, Vercel, Stripe, GitHub, Framer and Awwwards.
+
+My portfolio should immediately impress recruiters, software engineers, and hiring managers within the first 5 seconds.
+
+==========================================================
+IMPORTANT RULES
+==========================================================
+
+• Build everything from scratch.
+• Do NOT use Replit's default template.
+• Do NOT use placeholder sections.
+• Do NOT display "Made with Replit", badges, floating bubbles or any Replit branding.
+• Create a scalable project architecture.
+• Code should be modular.
+• Use reusable components.
+• Optimize performance.
+• Make every animation smooth.
+• Do not ask me for anything during implementation.
+• If information is missing, intelligently generate professional content based on my profile.
+• Everything should be editable later through an Admin Dashboard.
+• The project must be deployment-ready.
+
+==========================================================
+PROJECT GOAL
+==========================================================
+
+I am a Computer Engineering (AI & ML) student.
+
+I recently completed my internship at
+
+JSW Steel Ltd., Dolvi
+Information Technology Department
+
+My portfolio should represent me as a modern Full Stack Developer who loves AI, Web Development, System Design and Software Engineering.
+
+The website should feel premium, interactive and memorable.
+
+==========================================================
+TECH STACK
+==========================================================
+
+Choose the BEST stack yourself.
+
+Preferred stack:
+
+Next.js
+
+TypeScript
+
+React
+
+Tailwind CSS
+
+Framer Motion
+
+React Icons
+
+Shadcn UI
+
+GSAP only where necessary
+
+Three.js only if it improves quality without affecting performance.
+
+Choose the architecture yourself.
+
+==========================================================
+WEBSITE STRUCTURE
+==========================================================
+
+Home
+
+About
+
+Skills
+
+Projects
+
+Experience
+
+Education
+
+Achievements
+
+Certificates
+
+Resume
+
+Contact
+
+Settings
+
+==========================================================
+HERO SECTION
+==========================================================
+
+Full-screen hero.
+
+Animated greeting.
+
+Typing animation.
+
+Professional headline.
+
+Buttons
+
+Download Resume
+
+View Projects
+
+GitHub
+
+LinkedIn
+
+Animated scroll indicator.
+
+Professional CTA.
+
+Animated background.
+
+==========================================================
+BACKGROUND
+==========================================================
+
+Animated gradient.
+
+Particles.
+
+Glassmorphism.
+
+Floating shapes.
+
+Subtle blur.
+
+Parallax.
+
+Aurora effects.
+
+Mouse interaction.
+
+==========================================================
+ABOUT
+==========================================================
+
+Write professional content based on my experience.
+
+Do not exaggerate.
+
+Highlight
+
+Software Development
+
+AI
+
+Problem Solving
+
+Continuous Learning
+
+==========================================================
+PROFILE
+==========================================================
+
+Use my uploaded profile image.
+
+Crop professionally.
+
+Display in hero.
+
+Create glowing border.
+
+Add subtle floating animation.
+
+==========================================================
+SKILLS
+==========================================================
+
+Categorize
+
+Programming
+
+Frontend
+
+Backend
+
+Databases
+
+Cloud
+
+Tools
+
+AI
+
+Machine Learning
+
+Developer Tools
+
+Display
+
+Animated bars
+
+Technology icons
+
+Hover animations
+
+Progress indicators
+
+==========================================================
+PROJECTS
+==========================================================
+
+Create premium cards.
+
+Project 1
+
+Smart Shuttle
+
+Use complete professional information.
+
+Features
+
+GPS Tracking
+
+ETA
+
+Journey Planner
+
+Admin Dashboard
+
+Notifications
+
+PostgreSQL
+
+PWA
+
+Leaflet
+
+Modern UI
+
+GitHub Button
+
+Technology Badges
+
+Timeline
+
+Image Carousel support
+
+----------------------------------------------------------
+
+Project 2
+
+Automated Lecture Summarizer
+
+Use all provided information.
+
+Display
+
+AI
+
+Whisper
+
+BART
+
+Python
+
+Gradio
+
+Keyword Extraction
+
+Transcript
+
+Summary
+
+Technology badges.
+
+GitHub button.
+
+==========================================================
+EXPERIENCE
+==========================================================
+
+Professional Timeline.
+
+JSW Steel Ltd.
+
+IT Intern
+
+28 May 2026
+
+11 July 2026
+
+Responsibilities
+
+Achievements
+
+Technologies
+
+==========================================================
+EDUCATION
+==========================================================
+
+Animated timeline.
+
+College
+
+Degree
+
+Ongoing
+
+12th
+
+10th
+
+==========================================================
+CERTIFICATES
+==========================================================
+
+Beautiful card layout.
+
+Certificates
+
+Cyber Security
+
+Hackerrank
+
+Advanced Python
+
+Basic Python
+
+MSCIT
+
+Future certificates should be uploadable.
+
+==========================================================
+ACHIEVEMENTS
+==========================================================
+
+GDG Cloud Campaign Mentor
+
+Git & GitHub Workshop Speaker
+
+JSW Internship
+
+Hackerrank Badge
+
+Advanced Python Rank
+
+Hackathon
+
+Coding Competition
+
+==========================================================
+CONTACT
+==========================================================
+
+Beautiful modern section.
+
+Display
+
+GitHub
+
+LinkedIn
+
+Hackerrank
+
+Location
+
+Resume Download
+
+Hide
+
+Phone
+
+Email
+
+unless enabled from Admin.
+
+==========================================================
+ANIMATIONS
+==========================================================
+
+Smooth scrolling.
+
+Reveal animations.
+
+Card hover.
+
+3D tilt.
+
+Cursor glow.
+
+Magnetic buttons.
+
+Animated timeline.
+
+Page transitions.
+
+Floating icons.
+
+Skill animations.
+
+Typing effect.
+
+Loading screen.
+
+Progress bar.
+
+Scroll animations.
+
+Use only high-performance animations.
+
+==========================================================
+SETTINGS PANEL
+==========================================================
+
+Floating settings button.
+
+Beautiful slide-out settings panel.
+
+Options
+
+Dark Mode
+
+Light Mode
+
+Auto Theme
+
+Animation Toggle
+
+Performance Mode
+
+Cursor Effects
+
+Particle Effects
+
+Sound Toggle
+
+Portfolio Style
+
+==========================================================
+PORTFOLIO STYLE
+==========================================================
+
+Create multiple complete visual styles.
+
+Developer
+
+Industrial
+
+Anime
+
+Cybersecurity
+
+Gaming
+
+Space
+
+Japanese
+
+Mixed
+
+Changing style should update
+
+Background
+
+Colors
+
+Icons
+
+Animations
+
+Cards
+
+Buttons
+
+Cursor
+
+Typography
+
+Without refreshing the page.
+
+Default
+
+Industrial Developer.
+
+==========================================================
+ADMIN PANEL
+==========================================================
+
+Create
+
+/admin
+
+Professional Admin Dashboard.
+
+Authentication required.
+
+Store admin credentials in
+
+config/admin.ts
+
+only.
+
+Dashboard Sections
+
+Profile
+
+Hero
+
+About
+
+Skills
+
+Projects
+
+Experience
+
+Education
+
+Achievements
+
+Certificates
+
+Resume
+
+Contact
+
+Media
+
+SEO
+
+Settings
+
+Analytics
+
+==========================================================
+ADMIN FEATURES
+==========================================================
+
+Admin should be able to
+
+Upload Profile Image
+
+Change Name
+
+Edit About
+
+Change Hero Text
+
+Edit Skills
+
+Add Skill
+
+Delete Skill
+
+Add Project
+
+Edit Project
+
+Delete Project
+
+Upload Project Images
+
+Upload Certificates
+
+Delete Certificates
+
+Upload Resume
+
+Edit Education
+
+Edit Experience
+
+Edit Achievements
+
+Edit Contact
+
+Edit Social Links
+
+Toggle Public Visibility
+
+Enable/Disable Sections
+
+Change Theme
+
+Change Colors
+
+Manage Background
+
+Change Website Logo
+
+Upload Favicon
+
+Manage Visitor Counter
+
+Everything edited here must immediately reflect on the public website.
+
+==========================================================
+MEDIA MANAGEMENT
+==========================================================
+
+Upload
+
+Images
+
+Certificates
+
+Resume
+
+Project Images
+
+Icons
+
+Logo
+
+Favicon
+
+==========================================================
+SEO
+==========================================================
+
+Editable from Admin.
+
+Title
+
+Description
+
+Keywords
+
+Open Graph
+
+Twitter Cards
+
+Schema
+
+robots.txt
+
+sitemap.xml
+
+==========================================================
+RESPONSIVENESS
+==========================================================
+
+Perfect responsiveness.
+
+Desktop
+
+Laptop
+
+Tablet
+
+Mobile
+
+==========================================================
+PERFORMANCE
+==========================================================
+
+Lighthouse Score
+
+95+
+
+Lazy Loading
+
+Optimized Images
+
+Code Splitting
+
+Fast Navigation
+
+==========================================================
+DESIGN QUALITY
+==========================================================
+
+The design should be comparable to portfolios featured on:
+
+Awwwards
+
+Framer Showcase
+
+GitHub Universe
+
+Vercel
+
+Stripe
+
+Linear
+
+Apple
+
+It must NOT resemble a beginner portfolio.
+
+==========================================================
+EXTRA FEATURES
+==========================================================
+
+Visitor Counter
+
+Reading Progress
+
+Back To Top
+
+Loading Screen
+
+Custom Cursor
+
+404 Page
+
+404 Illustration
+
+Scroll Progress
+
+Animated Footer
+
+Interactive Technology Cloud
+
+GitHub Contribution Calendar
+
+Latest GitHub Repositories
+
+GitHub Statistics
+
+GitHub Activity
+
+Professional Timeline
+
+Resume Download
+
+==========================================================
+CONTENT
+==========================================================
+
+Generate professional content automatically using my profile.
+
+Do not use lorem ipsum.
+
+Use realistic and recruiter-friendly descriptions.
+
+==========================================================
+OUTPUT
+==========================================================
+
+1. Explain the project architecture.
+
+2. Create folder structure.
+
+3. Generate the complete project.
+
+4. Generate every required file.
+
+5. Ensure it runs immediately.
+
+6. Do not leave placeholders.
+
+7. Do not ask for more information.
+
+8. Produce a polished, production-ready portfolio that requires no further structural changes.
+
+The final website should feel like a premium portfolio built by a senior software engineer with exceptional UI/UX skills, not by an AI website generator.
