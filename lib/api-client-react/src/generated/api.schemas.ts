@@ -250,6 +250,7 @@ export interface PortfolioSettings {
   particleEffects: boolean;
   soundEnabled: boolean;
   performanceMode: boolean;
+  hiringEnabled: boolean;
 }
 
 export interface PortfolioSettingsInput {
@@ -260,6 +261,7 @@ export interface PortfolioSettingsInput {
   particleEffects: boolean;
   soundEnabled: boolean;
   performanceMode: boolean;
+  hiringEnabled: boolean;
 }
 
 export interface VisitorCount {

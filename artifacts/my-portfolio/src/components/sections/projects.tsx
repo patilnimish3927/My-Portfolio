@@ -17,16 +17,12 @@ const TiltCard = ({ children, className }: { children: React.ReactNode, classNam
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     if (!ref.current) return;
     const rect = ref.current.getBoundingClientRect();
-    
     const width = rect.width;
     const height = rect.height;
-    
     const mouseX = e.clientX - rect.left;
     const mouseY = e.clientY - rect.top;
-    
     const xPct = mouseX / width - 0.5;
     const yPct = mouseY / height - 0.5;
-    
     x.set(xPct * 10);
     y.set(yPct * -10);
   };
@@ -41,11 +37,7 @@ const TiltCard = ({ children, className }: { children: React.ReactNode, classNam
       ref={ref}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      style={{
-        rotateX,
-        rotateY,
-        transformStyle: "preserve-3d",
-      }}
+      style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
       className={`relative ${className}`}
     >
       {children}
@@ -61,14 +53,15 @@ export default function Projects() {
       title: "Smart Shuttle",
       description: "A full-stack Progressive Web App for real-time shuttle tracking and journey planning. Features live GPS tracking, ETA calculations, route optimization, and an admin dashboard.",
       techStack: ["React", "Node.js", "PostgreSQL", "Leaflet.js", "WebSockets"],
-      githubUrl: "https://github.com",
-      liveUrl: "#"
+      githubUrl: "https://github.com/patilnimish3927",
+      liveUrl: null as string | null,
     },
     {
       title: "Automated Lecture Summarizer",
       description: "AI-powered tool that transcribes audio lectures using OpenAI Whisper and generates intelligent summaries using the BART transformer model. Includes keyword extraction via a clean Gradio interface.",
       techStack: ["Python", "Whisper", "BART", "Gradio", "NLP"],
-      githubUrl: "https://github.com"
+      githubUrl: "https://github.com/patilnimish3927",
+      liveUrl: null as string | null,
     }
   ];
 
@@ -116,7 +109,7 @@ export default function Projects() {
                 <h3 className="text-2xl font-bold mb-4 text-foreground group-hover:text-primary transition-colors transform-gpu" style={{ transform: "translateZ(40px)" }}>
                   {project.title}
                 </h3>
-                
+
                 <div className="text-muted-foreground mb-8 flex-grow transform-gpu" style={{ transform: "translateZ(20px)" }}>
                   <p className="leading-relaxed">{project.description}</p>
                 </div>
@@ -132,9 +125,14 @@ export default function Projects() {
             </motion.div>
           ))}
         </div>
-        
+
         <div className="mt-16 text-center">
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-6 py-3 border border-border bg-background hover:border-primary hover:text-primary rounded text-sm font-mono transition-colors">
+          <a
+            href="https://github.com/patilnimish3927"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 border border-border bg-background hover:border-primary hover:text-primary rounded text-sm font-mono transition-colors"
+          >
             View full archive on GitHub <FiExternalLink />
           </a>
         </div>

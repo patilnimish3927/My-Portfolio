@@ -158,6 +158,7 @@ export const portfolioSettingsTable = pgTable("portfolio_settings", {
   particleEffects: boolean("particle_effects").notNull().default(true),
   soundEnabled: boolean("sound_enabled").notNull().default(false),
   performanceMode: boolean("performance_mode").notNull().default(false),
+  hiringEnabled: boolean("hiring_enabled").notNull().default(true),
 });
 
 export const insertPortfolioSettingsSchema = createInsertSchema(portfolioSettingsTable).omit({ id: true });

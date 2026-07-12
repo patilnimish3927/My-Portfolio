@@ -1,20 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useGetProfile, useGetContact } from '@workspace/api-client-react';
+import { useGetProfile } from '@workspace/api-client-react';
 import { FiDownload, FiGithub, FiLinkedin } from 'react-icons/fi';
+
+const GITHUB_URL = 'https://github.com/patilnimish3927';
+const LINKEDIN_URL = 'https://www.linkedin.com/in/nimishpatil3927/';
 
 export default function Hero() {
   const { data: profile } = useGetProfile();
-  const { data: contact } = useGetContact();
-  
+
   const roles = [
-    "Full Stack Developer", 
-    "AI/ML Enthusiast", 
-    "System Designer", 
-    "Problem Solver", 
+    "Full Stack Developer",
+    "AI/ML Enthusiast",
+    "System Designer",
+    "Problem Solver",
     "Computer Engineering Student"
   ];
-  
+
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -23,7 +25,7 @@ export default function Hero() {
   useEffect(() => {
     const handleTyping = () => {
       const currentRole = roles[roleIndex];
-      
+
       if (isDeleting) {
         setDisplayText(currentRole.substring(0, displayText.length - 1));
         setTypingSpeed(50);
@@ -46,8 +48,8 @@ export default function Hero() {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-      {/* Background Grid & Particles */}
-      <div className="absolute inset-0 z-0 opacity-20 pointer-events-none" 
+      {/* Background Grid & Glow */}
+      <div className="absolute inset-0 z-0 opacity-20 pointer-events-none"
            style={{ backgroundImage: 'radial-gradient(hsl(var(--primary)) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[128px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-[128px] pointer-events-none" />
@@ -61,46 +63,64 @@ export default function Hero() {
           <div className="inline-block px-4 py-1 mb-6 border border-primary/50 bg-primary/10 text-primary rounded-full font-mono text-sm font-medium">
             System Online • Ready to build
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
-            Hi, I'm <span className="text-primary">{profile?.name || 'Developer'}</span> <span className="inline-block origin-bottom-right hover:animate-waving-hand">👋</span>
+            Hi, I'm <span className="text-primary">{profile?.name || 'Nimish'}</span>{' '}
+            <span className="inline-block origin-bottom-right hover:animate-waving-hand">👋</span>
           </h1>
-          
+
           <div className="h-12 mb-6">
             <h2 className="text-2xl md:text-3xl font-mono text-muted-foreground">
               &gt; {displayText}<span className="animate-pulse text-primary">_</span>
             </h2>
           </div>
-          
+
           <p className="text-lg text-muted-foreground mb-10 max-w-lg leading-relaxed">
             {profile?.headline || 'Forging robust digital solutions at the intersection of web development and artificial intelligence.'}
           </p>
-          
+
           <div className="flex flex-wrap items-center gap-4">
-            <a 
-              href={profile?.resumeUrl || '#'} 
-              download
-              className="flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 hover:scale-105 transition-all shadow-[0_0_20px_rgba(var(--primary),0.4)]"
-            >
-              <FiDownload /> Download Resume
-            </a>
-            <a 
-              href="#projects" 
+            {profile?.resumeUrl ? (
+              <a
+                href={profile.resumeUrl}
+                download
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 hover:scale-105 transition-all shadow-[0_0_20px_rgba(var(--primary),0.4)]"
+              >
+                <FiDownload /> Download Resume
+              </a>
+            ) : (
+              <button
+                disabled
+                className="flex items-center gap-2 px-6 py-3 bg-primary/40 text-primary-foreground/60 font-medium rounded cursor-not-allowed"
+              >
+                <FiDownload /> Resume Not Set
+              </button>
+            )}
+            <a
+              href="#projects"
               className="px-6 py-3 border border-border bg-card text-foreground font-medium rounded hover:border-primary hover:text-primary transition-all"
             >
               View Projects
             </a>
             <div className="flex gap-2 ml-2">
-              {contact?.github && (
-                <a href={contact.github} target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-foreground hover:text-primary hover:border-primary transition-all bg-card">
-                  <FiGithub className="w-5 h-5" />
-                </a>
-              )}
-              {contact?.linkedin && (
-                <a href={contact.linkedin} target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-foreground hover:text-primary hover:border-primary transition-all bg-card">
-                  <FiLinkedin className="w-5 h-5" />
-                </a>
-              )}
+              <a
+                href={GITHUB_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-foreground hover:text-primary hover:border-primary transition-all bg-card"
+              >
+                <FiGithub className="w-5 h-5" />
+              </a>
+              <a
+                href={LINKEDIN_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-foreground hover:text-primary hover:border-primary transition-all bg-card"
+              >
+                <FiLinkedin className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </motion.div>
@@ -119,7 +139,7 @@ export default function Hero() {
                 <img src={profile.profileImageUrl} alt={profile.name} className="w-full h-full object-cover" />
               ) : (
                 <div className="w-full h-full bg-muted flex items-center justify-center text-primary font-mono text-8xl font-bold">
-                  {(profile?.name || 'D').charAt(0)}
+                  {(profile?.name || 'N').charAt(0)}
                 </div>
               )}
             </div>

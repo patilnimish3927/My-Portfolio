@@ -14,4 +14,5 @@ export interface PortfolioSettingsInput {
   particleEffects: boolean;
   soundEnabled: boolean;
   performanceMode: boolean;
+  hiringEnabled: boolean;
 }

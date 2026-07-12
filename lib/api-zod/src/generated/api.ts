@@ -183,7 +183,8 @@ export const GetPortfolioSettingsResponse = zod.object({
   "cursorEffects": zod.boolean(),
   "particleEffects": zod.boolean(),
   "soundEnabled": zod.boolean(),
-  "performanceMode": zod.boolean()
+  "performanceMode": zod.boolean(),
+  "hiringEnabled": zod.boolean()
 })
 
 
@@ -700,7 +701,8 @@ export const AdminUpdateSettingsBody = zod.object({
   "cursorEffects": zod.boolean(),
   "particleEffects": zod.boolean(),
   "soundEnabled": zod.boolean(),
-  "performanceMode": zod.boolean()
+  "performanceMode": zod.boolean(),
+  "hiringEnabled": zod.boolean()
 })
 
 export const AdminUpdateSettingsResponse = zod.object({
@@ -711,7 +713,8 @@ export const AdminUpdateSettingsResponse = zod.object({
   "cursorEffects": zod.boolean(),
   "particleEffects": zod.boolean(),
   "soundEnabled": zod.boolean(),
-  "performanceMode": zod.boolean()
+  "performanceMode": zod.boolean(),
+  "hiringEnabled": zod.boolean()
 })
 
 

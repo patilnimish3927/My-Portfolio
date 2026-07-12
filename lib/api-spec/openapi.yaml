@@ -1059,7 +1059,7 @@ components:
 
     PortfolioSettings:
       type: object
-      required: [id, theme, style, animationsEnabled, cursorEffects, particleEffects, soundEnabled, performanceMode]
+      required: [id, theme, style, animationsEnabled, cursorEffects, particleEffects, soundEnabled, performanceMode, hiringEnabled]
       properties:
         id:
           type: integer
@@ -1077,10 +1077,12 @@ components:
           type: boolean
         performanceMode:
           type: boolean
+        hiringEnabled:
+          type: boolean
 
     PortfolioSettingsInput:
       type: object
-      required: [theme, style, animationsEnabled, cursorEffects, particleEffects, soundEnabled, performanceMode]
+      required: [theme, style, animationsEnabled, cursorEffects, particleEffects, soundEnabled, performanceMode, hiringEnabled]
       properties:
         theme:
           type: string
@@ -1095,6 +1097,8 @@ components:
         soundEnabled:
           type: boolean
         performanceMode:
+          type: boolean
+        hiringEnabled:
           type: boolean
 
     VisitorCount:
