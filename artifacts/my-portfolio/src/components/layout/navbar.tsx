@@ -20,6 +20,7 @@ export default function Navbar() {
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
     { name: 'Experience', href: '#experience' },
+    { name: 'Certificates', href: '#certificates' },
   ];
 
   // hiringEnabled defaults to true if settings not yet loaded

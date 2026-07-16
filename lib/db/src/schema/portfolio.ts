@@ -122,6 +122,7 @@ export const certificatesTable = pgTable("certificates", {
   issueDate: text("issue_date"),
   credentialUrl: text("credential_url"),
   imageUrl: text("image_url"),
+  pdfUrl: text("pdf_url"),
   sortOrder: integer("sort_order").notNull().default(0),
 });
 

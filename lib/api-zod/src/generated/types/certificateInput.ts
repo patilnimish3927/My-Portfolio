@@ -15,5 +15,7 @@ export interface CertificateInput {
   credentialUrl?: string | null;
   /** @nullable */
   imageUrl?: string | null;
+  /** @nullable */
+  pdfUrl?: string | null;
   sortOrder: number;
 }

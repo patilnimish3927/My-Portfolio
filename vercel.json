@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "pnpm run build",
+  "outputDirectory": "artifacts/my-portfolio/dist",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/index" }
+  ],
+  "functions": {
+    "api/index.ts": {
+      "maxDuration": 30
+    }
+  }
+}

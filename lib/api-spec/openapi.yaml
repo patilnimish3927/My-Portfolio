@@ -993,6 +993,8 @@ components:
           type: ["string", "null"]
         imageUrl:
           type: ["string", "null"]
+        pdfUrl:
+          type: ["string", "null"]
         sortOrder:
           type: integer
 
@@ -1009,6 +1011,8 @@ components:
         credentialUrl:
           type: ["string", "null"]
         imageUrl:
+          type: ["string", "null"]
+        pdfUrl:
           type: ["string", "null"]
         sortOrder:
           type: integer

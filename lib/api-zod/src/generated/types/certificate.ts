@@ -16,5 +16,7 @@ export interface Certificate {
   credentialUrl?: string | null;
   /** @nullable */
   imageUrl?: string | null;
+  /** @nullable */
+  pdfUrl?: string | null;
   sortOrder: number;
 }

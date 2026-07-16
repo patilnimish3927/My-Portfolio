@@ -1,0 +1,172 @@
+You are an expert Full Stack Developer.
+
+Modify my existing portfolio project.
+
+IMPORTANT:
+
+This project will ultimately be hosted on GitHub + Vercel.
+
+DO NOT use:
+
+- Replit Database
+- SQLite
+- Local JSON storage
+- Local uploads
+- Replit Object Storage
+- Replit authentication
+- Any Replit-only APIs
+- Any feature that only works inside Replit
+
+Everything must work after I push the project to GitHub and deploy it on Vercel.
+
+----------------------------------------------------
+CERTIFICATES SECTION
+----------------------------------------------------
+
+Create a new Certificates section matching the entire portfolio theme.
+
+Navbar:
+- Add Certificates in navbar.
+- Smooth scrolling.
+
+Responsive Grid:
+
+Desktop:
+- 3 certificates per row.
+
+Tablet:
+- 2 certificates.
+
+Mobile:
+- 1 certificate.
+
+Cards should animate similarly to Project cards.
+
+----------------------------------------------------
+CERTIFICATE VIEWER
+----------------------------------------------------
+
+Clicking an image opens:
+
+- Fullscreen modal
+- Dark overlay
+- Blur background
+- Close button
+- ESC support
+- Click outside to close
+- Zoom animation
+
+Clicking a PDF:
+
+Open inside modal if supported,
+otherwise open new tab.
+
+----------------------------------------------------
+ADMIN PANEL
+----------------------------------------------------
+
+I already have an Admin Panel.
+
+Extend it.
+
+Admin must be able to:
+
+✓ Upload certificate image
+
+✓ Upload certificate PDF
+
+✓ Edit certificate title
+
+✓ Edit issuer
+
+✓ Edit issue date
+
+✓ Delete certificate
+
+✓ Reorder certificates
+
+The UI must match the existing admin panel.
+
+----------------------------------------------------
+STORAGE
+----------------------------------------------------
+
+Use Vercel Blob Storage.
+
+Do NOT create your own database.
+
+All uploaded files must be stored in Vercel Blob.
+
+Metadata should also be stored in a Vercel-compatible solution (Blob metadata or another Vercel-supported lightweight approach).
+
+Do NOT use any Replit services.
+
+----------------------------------------------------
+API
+----------------------------------------------------
+
+Create Vercel Serverless API Routes.
+
+Examples:
+
+/api/certificates
+
+/api/upload
+
+/api/delete
+
+These APIs must work after deployment on Vercel without modification.
+
+----------------------------------------------------
+CONFIGURATION
+----------------------------------------------------
+
+Store every secret inside environment variables.
+
+Never hardcode keys.
+
+Provide an .env.example.
+
+----------------------------------------------------
+CODE QUALITY
+----------------------------------------------------
+
+Use reusable components.
+
+Production-ready.
+
+Responsive.
+
+Accessible.
+
+No duplicate code.
+
+No broken existing functionality.
+
+----------------------------------------------------
+END OF IMPLEMENTATION
+----------------------------------------------------
+
+After implementation provide a beginner-friendly guide explaining:
+
+1. Which Vercel services are used.
+
+2. Which environment variables are needed.
+
+3. Where uploaded certificates are stored.
+
+4. Whether GitHub stores uploaded certificates.
+
+5. How uploads continue working after deployment.
+
+6. How to migrate the project from Replit to GitHub.
+
+7. How to deploy on Vercel.
+
+8. How future updates are deployed.
+
+9. How uploaded certificates remain available after redeployments.
+
+10. Explain the project architecture using a simple diagram.
+
+Everything must be production-ready and optimized for GitHub + Vercel deployment.

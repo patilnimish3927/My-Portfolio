@@ -1,0 +1,173 @@
+You are an expert Full Stack Web Developer and UI/UX Designer.
+
+Modify my existing portfolio project without breaking any existing functionality.
+
+## Task 1: Add Certificates Section
+
+1. Add a new "Certificates" item in the navbar.
+2. Position it consistently with the existing navigation links (About, Skills, Projects, Contact, etc.).
+3. Clicking the navbar item should smoothly scroll to the Certificates section.
+
+---
+
+## Task 2: Certificates Section Design
+
+Create a modern certificates section that matches the overall design, typography, colors, animations, spacing, shadows, borders, and responsiveness of the current portfolio.
+
+The section should include:
+
+- Section heading
+- Small description
+- Responsive certificate gallery
+
+### Desktop
+
+- Show exactly 3 certificates per row.
+- Certificates should have equal width and height.
+- Proper spacing between cards.
+- Hover animation similar to other project cards.
+
+### Tablet
+
+- Show 2 certificates per row.
+
+### Mobile
+
+- Show only 1 certificate per row.
+
+The layout should automatically adjust according to screen size.
+
+---
+
+## Task 3: Certificate Cards
+
+Each certificate card should contain:
+
+- Thumbnail image
+- Certificate title
+- Issuing organization
+- Issue date (optional)
+
+For now use placeholder certificates.
+
+Example placeholders:
+
+Certificate 1
+Certificate 2
+Certificate 3
+Certificate 4
+Certificate 5
+Certificate 6
+
+These placeholders should be very easy for me to replace later.
+
+---
+
+## Task 4: Image/PDF Viewer
+
+When the user clicks any certificate:
+
+If it is an image:
+- Open it in a beautiful fullscreen lightbox/modal.
+- Dark blurred background.
+- Close button.
+- ESC key support.
+- Click outside to close.
+- Zoom animation.
+- Responsive.
+
+If it is a PDF:
+- Open the PDF in a new browser tab.
+OR
+Show it inside a modal using an embedded PDF viewer if supported.
+
+---
+
+## Task 5: File Organization
+
+Create a clean folder structure.
+
+Example:
+
+public/
+    certificates/
+        images/
+        pdfs/
+
+OR any equivalent structure suitable for this project.
+
+All certificate references should come from one central data file so that adding a new certificate only requires editing one place.
+
+---
+
+## Task 6: Future Upload Support
+
+Do NOT implement uploading functionality.
+
+Instead:
+
+- Build the project so certificates can simply be added later by placing image/PDF files into the correct folder.
+- Make replacing placeholders extremely easy.
+
+---
+
+## Task 7: Explain Everything
+
+After implementing everything, explain in simple beginner-friendly steps:
+
+1. Where certificate files should be placed.
+2. Which files need to be edited.
+3. How to add another certificate.
+4. Supported file formats.
+5. Recommended image size.
+6. Recommended PDF size.
+7. Any filename conventions.
+
+---
+
+## Task 8: Free Forever Hosting for Certificates
+
+Recommend a completely FREE FOREVER method for storing certificate images/PDFs.
+
+Requirements:
+
+- No paid plan required.
+- Easy for beginners.
+- Works with GitHub deployment.
+- No backend required.
+- Fast loading.
+- Reliable.
+
+If storing certificates directly inside the project repository is the best option, use that approach.
+
+If another approach is better, explain why.
+
+---
+
+## Task 9: Portfolio Deployment Guide
+
+At the end, provide complete beginner-friendly deployment instructions.
+
+Include:
+
+1. Which account(s) I need to create.
+2. Which hosting platform you recommend.
+3. Why you recommend it.
+4. How to connect GitHub.
+5. How to deploy after pushing from Replit.
+6. How future updates are deployed.
+7. Whether certificates added later require redeployment.
+8. Explain where all uploaded files are actually stored after deployment.
+
+---
+
+## Requirements
+
+- Do not change existing colors.
+- Do not break current responsiveness.
+- Do not remove any existing components.
+- Use clean reusable code.
+- Use responsive CSS.
+- Follow accessibility best practices.
+- Keep animations smooth.
+- Make everything production-ready.

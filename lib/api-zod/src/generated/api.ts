@@ -151,6 +151,7 @@ export const ListCertificatesResponseItem = zod.object({
   "issueDate": zod.string().nullish(),
   "credentialUrl": zod.string().nullish(),
   "imageUrl": zod.string().nullish(),
+  "pdfUrl": zod.string().nullish(),
   "sortOrder": zod.number()
 })
 export const ListCertificatesResponse = zod.array(ListCertificatesResponseItem)
@@ -613,6 +614,7 @@ export const AdminCreateCertificateBody = zod.object({
   "issueDate": zod.string().nullish(),
   "credentialUrl": zod.string().nullish(),
   "imageUrl": zod.string().nullish(),
+  "pdfUrl": zod.string().nullish(),
   "sortOrder": zod.number()
 })
 
@@ -623,6 +625,7 @@ export const AdminCreateCertificateResponse = zod.object({
   "issueDate": zod.string().nullish(),
   "credentialUrl": zod.string().nullish(),
   "imageUrl": zod.string().nullish(),
+  "pdfUrl": zod.string().nullish(),
   "sortOrder": zod.number()
 })
 
@@ -640,6 +643,7 @@ export const AdminUpdateCertificateBody = zod.object({
   "issueDate": zod.string().nullish(),
   "credentialUrl": zod.string().nullish(),
   "imageUrl": zod.string().nullish(),
+  "pdfUrl": zod.string().nullish(),
   "sortOrder": zod.number()
 })
 
@@ -650,6 +654,7 @@ export const AdminUpdateCertificateResponse = zod.object({
   "issueDate": zod.string().nullish(),
   "credentialUrl": zod.string().nullish(),
   "imageUrl": zod.string().nullish(),
+  "pdfUrl": zod.string().nullish(),
   "sortOrder": zod.number()
 })
 
